@@ -1,0 +1,319 @@
+* {
+    font-family: Calibri, sans-serif;
+}
+.ourWork {
+    width: 100%;
+    height: 100vh;
+    background: #de2b24;
+}
+.ourWork__Title {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+.ourWork__Title h2 {
+    line-height: 0;
+    font-size: 40px;
+}
+.ourWork__Title p {
+    font-size: 20px;
+}
+.ourWork__Title p:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 10px auto;
+    background: white;
+}
+.ourWorkContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    padding-bottom: 60px;
+    width: 70%;
+    height: 30vw;
+    margin: 0 auto;
+
+}
+.ourWorkContainer__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 25%;
+    height: 50%;
+    text-align: center;
+    color: white;
+}
+
+.ourWorkContainer__item h3 {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.ourWorkContainer__item p {
+    margin: 0;
+}
+.ourWorkContainer__item:nth-child(odd){
+    background: #f35e59;
+}
+.ourWorkContainer__item:nth-child(1) {
+    order: 1;
+}
+.ourWorkContainer__item:nth-child(2) {
+    order: 2;
+}
+.ourWorkContainer__item:nth-child(3) {
+    order: 3;
+}
+.ourWorkContainer__item:nth-child(4) {
+    order: 4;
+}
+.ourWorkContainer__item:nth-child(5) {
+    order: 6;
+}
+.ourWorkContainer__item:nth-child(6) {
+    order: 5;
+}
+.ourWorkContainer__item:nth-child(7) {
+    order: 8;
+}
+.ourWorkContainer__item:nth-child(8) {
+    order: 7;
+}
+.ourWorkContainer__item:nth-child(2) img,
+.ourWorkContainer__item:nth-child(4) img,
+.ourWorkContainer__item:nth-child(6) img,
+.ourWorkContainer__item:nth-child(8) img
+{
+    width: 110%;
+    height: 100%;
+}
+.contact {
+    width: 100%;
+    height: auto;
+    background: #1287bf;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.contact h2 {
+    padding-top: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+}
+.contact h3 {
+    margin-top: 0;
+    color: white;
+}
+.contact__round {
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+}
+.contact__round  p {
+    margin: 20% auto;
+}
+.contact__hide p::before {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: 44%; top: -80px; /* Положение треугольника */
+    border: 40px solid transparent; /* Прозрачные границы */
+    border-bottom: 40px solid #FFFF; /* Добавляем треугольник */
+}
+.contact__hide {
+    position: relative;
+    margin: 60px auto;
+    margin-bottom: 0;
+    width: 50%;
+    background: white;
+    padding: 30px 10px;
+}
+.contact__hide input {
+    margin: 10px auto;
+    width: 70%;
+    height: 40px;
+}
+.contact__hide button {
+    width: 160px;
+    height: 45px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #de2b24;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.contact__hide-close::after {
+    content: 'x';
+    line-height: 36px;
+    font-size: 28px;
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    background: #de2b2D;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+footer{
+    background: #2a2a2a;
+}
+footer h2 {
+    margin-top: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: #f5f5f5;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+footer li {
+    border: 2px solid #515151;
+    width: 30px;
+    height: 30px;
+    padding: 15px 10px 0 10px;
+    margin-right: 20px;
+    text-align: center;
+}
+footer p {
+    text-align: center;
+    color: #f5f5f5 ;
+}
+
+footer input {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    border: none;
+    background: grey;
+    color: #f5f5f5 ;
+}
+.footer__input {
+    width: 50%;
+    margin: 0 auto;
+}
+.footer__input button {
+    display: block;
+    margin: 30px auto 50px auto;
+    padding: 10px 30px;
+    font-size: 22px;
+    background: transparent;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.footer__down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background: #515151;
+    text-align: center;
+}
+.footer__down p {
+
+}
+@media screen and (max-width: 950px){
+    .ourWork {
+        height: 100%;
+    }
+    .ourWorkContainer {
+        height: auto;
+    }
+    .ourWorkContainer__item {
+        width: 50%;
+        height: 30vw;
+    }
+    .ourWorkContainer__item:nth-child(1) {
+        order: 1;
+    }
+    .ourWorkContainer__item:nth-child(2) {
+        order: 2;
+    }
+    .ourWorkContainer__item:nth-child(3) {
+        order: 4;
+    }
+    .ourWorkContainer__item:nth-child(4) {
+        order: 3;
+    }
+    .ourWorkContainer__item:nth-child(5) {
+        order: 5;
+    }
+    .ourWorkContainer__item:nth-child(6) {
+        order: 6;
+    }
+    .ourWorkContainer__item:nth-child(7) {
+        order: 8;
+    }
+    .ourWorkContainer__item:nth-child(8) {
+        order: 7;
+    }
+}
+@media screen and (max-width: 789px){
+    .ourWorkContainer__item {
+        width: 100%;
+        height: 50vw;
+    }
+    .ourWorkContainer__item:nth-child(1) {
+        order: 1;
+    }
+    .ourWorkContainer__item:nth-child(2) {
+        order: 2;
+    }
+    .ourWorkContainer__item:nth-child(4) {
+        order: 4;
+    }
+    .ourWorkContainer__item:nth-child(3) {
+        order: 3;
+    }
+    .ourWorkContainer__item:nth-child(5) {
+        order: 5;
+    }
+    .ourWorkContainer__item:nth-child(6) {
+        order: 6;
+    }
+    .ourWorkContainer__item:nth-child(8) {
+        order: 8;
+    }
+    .ourWorkContainer__item:nth-child(7) {
+        order: 7;
+    }
+    .contact {
+        height: auto;
+    }
+    .contact__hide {
+        margin-bottom: 0;
+    }
+}
+
+#hider {
+    display: none;
+}
+#hider:checked + .contact__hide {
+    display: block;
+}
+#hider:checked + .contact {
+    height: 100vh;
+}
+.link {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+.contact__hide {
+    display: none;
+}
